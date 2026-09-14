@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação - Palmeiras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Sorteio de 1 a 10 ⚽</h1>
+        <p class="instrucoes">Qual é o número sorteado?</p>
+
+        <div class="input-box">
+            <input type="number" id="chute" min="1" max="10" placeholder="Ex: 7">
+            <button onclick="jogar()">Chutar</button>
+        </div>
+
+        <div id="resultado" class="mensagem"></div>
+
+        <div class="placar">
+            <p>Acertos: <span id="pontuacao">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
